@@ -33,7 +33,7 @@ class DBManager:
     
     @staticmethod
     def init_db():
-        from photolog.model import *
+        from daumbot.model import *
         from photolog.model import Base
         Base.metadata.create_all(bind=DBManager.__engine)
 
